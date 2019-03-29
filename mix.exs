@@ -32,8 +32,7 @@ defmodule Nomoji.MixProject do
   defp package do
     [
       name: "nomoji",
-      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
-                license* CHANGELOG* changelog* src),
+      files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/joshddunn/nomoji"}
     ]
