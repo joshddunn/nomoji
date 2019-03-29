@@ -34,7 +34,7 @@ defmodule Nomoji.MixProject do
       name: "nomoji",
       files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/joshddunn/nomoji"}
+      links: %{"GitHub" => "https://github.com/joshddunn/nomoji"},
       docs: [
         main: "Nomoji",
         extras: ["README.md"]
