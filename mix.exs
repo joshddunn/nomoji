@@ -22,7 +22,9 @@ defmodule Nomoji.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    []
+    [
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
   end
 
   defp description() do
@@ -34,11 +36,7 @@ defmodule Nomoji.MixProject do
       name: "nomoji",
       files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/joshddunn/nomoji"},
-      docs: [
-        main: "Nomoji",
-        extras: ["README.md"]
-      ]
+      links: %{"GitHub" => "https://github.com/joshddunn/nomoji"}
     ]
   end
 end
