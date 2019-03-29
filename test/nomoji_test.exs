@@ -7,14 +7,14 @@ defmodule NomojiTest do
   end
 
   test "removes the character that makes things big" do
-    assert Nomoji.ignore_charlist(65039) == true
+    assert Nomoji.keep_int(65039) == false
   end
 
   test "removes strings in the form 1Fxxx" do
-    assert Nomoji.ignore_charlist(128126) == true
+    assert Nomoji.keep_int(128126) == false
   end
 
   test "doesnt remove string in the form 1Fxx" do
-    assert Nomoji.ignore_charlist(7976) == false
+    assert Nomoji.keep_int(7976) == true
   end
 end
