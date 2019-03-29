@@ -1,6 +1,9 @@
 # Nomoji
 
-**TODO: Add description**
+Nomoji removes emojis from your strings.
+
+    Nomoji.strip("hey, listen! 👀")
+    > "hey, listen!"
 
 ## Installation
 
